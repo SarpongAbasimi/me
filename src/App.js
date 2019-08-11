@@ -1,10 +1,11 @@
 import React from 'react'
+import { Body } from '../src/components/body'
 
 export class App extends React.Component{
   render(){
     return(
       <div>
-      <h1 className='container'>hey</h1>
+      <Body/>
       </div>
     );
   };
