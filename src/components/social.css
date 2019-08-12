@@ -12,6 +12,6 @@
   transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .github:hover{
-  color:#ECDC54;
+  color:#FD1016;
   opacity: 0.8;
 }
