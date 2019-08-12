@@ -1,0 +1,14 @@
+.description{
+  text-align: center;
+  font-family: var(--oSans);
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffff;
+  padding: 10px;
+}
+
+.describo{
+  background-color: #CE3174;
+  padding: 5px;
+  color: #ffff;
+}
