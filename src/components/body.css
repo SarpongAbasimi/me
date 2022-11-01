@@ -1,10 +1,10 @@
-.body{
+.body {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.body h1{
+.body h1 {
   color: var(--fontColour);
   font-family: var(--mons);
   align-self: center;

@@ -1,4 +1,4 @@
-.description{
+.description {
   text-align: center;
   font-family: var(--oSans);
   font-size: 20px;
@@ -7,8 +7,8 @@
   padding: 10px;
 }
 
-.describo{
-  background-color: #FD1016;
+.describo {
+  background-color: #fd1016;
   padding: 5px;
   color: #ffff;
 }
