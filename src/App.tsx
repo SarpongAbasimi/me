@@ -1,6 +1,11 @@
-import React from "react";
-import "./App.css";
+import React from 'react'
+import './App.css'
+import { Home } from './pages/Home/Home'
 
 export function App() {
-  return <h1>Hello</h1>;
+    return (
+        <>
+            <Home></Home>
+        </>
+    )
 }
