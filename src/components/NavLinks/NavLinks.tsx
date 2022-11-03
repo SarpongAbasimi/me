@@ -1,22 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { CssStyleProps } from '../../Interfaces/Types'
 
 type NavLinkProp = {
   links: { id: string; to: string; name: string }[]
-  styles?: {
-    [key: string]: string
-  }
+  ulElementStyles?: CssStyleProps
+  liElementStyles?: CssStyleProps
+  otherCssProps?: CssStyleProps
+  children?: React.ReactNode
 }
-export const NavLinks = ({ styles, links }: NavLinkProp) => {
+export const NavLinks = ({
+  ulElementStyles,
+  links,
+  liElementStyles,
+  otherCssProps,
+  children,
+}: NavLinkProp) => {
   return (
-    <div style={{ ...styles }}>
+    <ul style={{ ...ulElementStyles }}>
       {links.map((link, _) => {
         return (
-          <Link to={link.to} key={link.id}>
-            {link.name}
+          <Link to={link.to} key={link.id} style={{ ...otherCssProps }}>
+            <li style={{ ...liElementStyles }}>{link.name}</li>
           </Link>
         )
       })}
-    </div>
+      <>{children}</>
+    </ul>
   )
 }

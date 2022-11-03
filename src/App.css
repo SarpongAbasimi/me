@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 * {
   padding: 0;
@@ -8,12 +8,13 @@
 }
 :root {
   --backGroundColour: #1f2328;
-  --fontColour: #ffffff;
-  --mons: "Montserrat", sans-serif;
-  --oSans: "Open Sans", sans-serif;
+  --backGroundColourTwo: #000;
+  --fontColour: #fff;
+  --mons: 'Montserrat', sans-serif;
+  --oSans: 'Open Sans', sans-serif;
 }
 
 body {
-  background-color: var(--backGroundColour);
+  background-color: var(--backGroundColourTwo);
   padding: 10px;
 }
