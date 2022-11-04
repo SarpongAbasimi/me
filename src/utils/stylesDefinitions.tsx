@@ -32,3 +32,37 @@ export const fontAwesonIconCss = {
   color: '#bbb',
   marginLeft: '2px',
 }
+
+export const flexContainer = {
+  width: '100%',
+  // backgroundColor: 'green',
+  display: 'flex',
+  paddingTop: '3%',
+  justifyContent: 'center',
+}
+
+export const childContainerStyle = {
+  width: '50%',
+  // backgroundColor: 'blue',
+  padding: '1%',
+}
+
+export const introh1NameStyle = {
+  color: 'var( --textTitleColor)',
+  fontWeight: '900',
+  fontSize: '2.35em',
+  lineheight: '1.1111111',
+  fontFamily: 'var(--mons)',
+  fontSmoothing: 'antialiased',
+}
+export const introPSytle = {
+  paddingTop: '4%',
+  fontSize: '18px',
+  color: 'var(--textNormalColor)',
+  fontFamily: 'var(--oSans)',
+  fontWeight: '500',
+}
+
+export const pWhoamiLinkStyle = {
+  color: 'var(--textLink)',
+}

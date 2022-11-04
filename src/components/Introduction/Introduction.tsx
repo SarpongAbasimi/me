@@ -12,6 +12,9 @@ type IntroductionProp = {
     media?: string
     hobbies?: string
     passion?: string
+    channelName?: string
+    findMe?: string
+    mediaNamesAndLinks?: { id: string; name: string; link: string }[]
   }
   flexContainer?: CssStyleProps
   childContainerStyle?: CssStyleProps
@@ -27,6 +30,7 @@ export const Introduction = ({
   flexContainer,
   h1NameStyle,
   pSytle,
+  pWhoamiLinkStyle,
 }: IntroductionProp) => {
   return (
     <div style={{ ...flexContainer }}>
@@ -35,13 +39,33 @@ export const Introduction = ({
           {intro.name}
         </h1>
         <p className="whoami" style={{ ...pSytle }}>
-          {intro.whoami} <a href={intro.company.site}>{intro.company.name}</a>
+          {intro.whoami}{' '}
+          <a href={intro.company.site} style={{ ...pWhoamiLinkStyle }}>
+            {intro.company.name}
+          </a>
         </p>
         <p className="passion" style={{ ...pSytle }}>
           {intro.passion}
+          <a href={intro.media} style={{ ...pWhoamiLinkStyle }}>
+            {intro.channelName}
+          </a>
         </p>
         <p className="hobbies" style={{ ...pSytle }}>
           {intro.hobbies}
+        </p>
+        <p className="find_me" style={{ ...pSytle }}>
+          {intro.findMe}
+          {intro.mediaNamesAndLinks?.map((data, _) => {
+            return (
+              <a
+                href={data.link}
+                style={{ ...pWhoamiLinkStyle, margin: '2px' }}
+                key={data.id}
+              >
+                {data.name}
+              </a>
+            )
+          })}
         </p>
       </div>
     </div>

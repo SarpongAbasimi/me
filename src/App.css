@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@800&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;400;800&display=swap');
 
 * {
   padding: 0;
@@ -9,12 +10,30 @@
 :root {
   --backGroundColour: #1f2328;
   --backGroundColourTwo: #000;
+  --backGroundColourThree: #282c35;
   --fontColour: #fff;
   --mons: 'Montserrat', sans-serif;
   --oSans: 'Open Sans', sans-serif;
+  --textNormalColor: hsla(0, 0%, 100%, 0.88);
+  --textTitleColor: wheat;
+  --textLink: #ff0;
+  --initialTextColor: '#847f7f',
+
+  /** For when the bg changes to*/
+  --bgwhite: #fff;
+  --whiteBgtextNormal: #222;
+  --whiteBgtextTitle: #222;
+  --whiteBgtextLink: #b8860b;
+  --whiteBgquoteColor: rgba(0, 0, 0, 0.59);
+  --whiteBgcodeColor: rgba(25, 25, 25, 0.8);
+  --whiteBgcodeBlockBackground: #fdf6e3;
+  --whiteBgiconColor: #000;
+  --whiteBghr: rgba(0, 0, 0, 0.2);
 }
 
 body {
   background-color: var(--backGroundColourTwo);
   padding: 10px;
 }
+
+
