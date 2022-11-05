@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { MouseEvent, useEffect, useRef, useState } from 'react'
 import './App.css'
 import { Home } from './pages/Home/Home'
 import { Nav } from './components/Nav/Nav'
@@ -13,16 +13,21 @@ import {
   fontAwesonIconCss,
 } from './utils/stylesDefinitions'
 import { useSpring, animated, easings } from 'react-spring'
+import { CssStyleProps } from './Interfaces/Types'
 
 export function App() {
-  const initialSpring = useSpring({
-    to: { color: 'gold' },
-    from: fontAwesonIconCss,
-    config: {
-      duration: 1000,
-      easing: easings.easeInCirc,
-    },
-  })
+  const useSpringFunction = (to: CssStyleProps, from: CssStyleProps) => {
+    return useSpring({
+      to: to,
+      from: from,
+      config: {
+        duration: 1000,
+        easing: easings.easeInCirc,
+      },
+    })
+  }
+
+  const initialSpring = useSpringFunction({ color: 'gold' }, fontAwesonIconCss)
 
   let spingAnimationWhenHover = useSpring({
     to: { color: 'red' },
@@ -34,6 +39,13 @@ export function App() {
   })
 
   let [sprintEffect, setSprintEffect] = useState(initialSpring)
+
+  const handleMouseOver = (
+    event: React.MouseEvent<HTMLAnchorElement>
+  ): void => {
+    setSprintEffect(spingAnimationWhenHover)
+    event.currentTarget.style.color = 'var(--textLink)'
+  }
 
   return (
     <>
@@ -56,10 +68,13 @@ export function App() {
                   href={value.link}
                   key={value.id}
                   style={sprintEffect}
-                  onMouseOver={() => setSprintEffect(spingAnimationWhenHover)}
+                  onMouseOver={handleMouseOver}
                   onMouseLeave={() => setSprintEffect(initialSpring)}
                 >
-                  <FontAwesomeIcon icon={value.fontAwesonIcon} />
+                  <FontAwesomeIcon
+                    icon={value.fontAwesonIcon}
+                    style={{ font: '5px' }}
+                  />
                 </animated.a>
               )
             })}

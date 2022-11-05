@@ -21,7 +21,9 @@ export const NavLinks = ({
       {links.map((link, _) => {
         return (
           <Link to={link.to} key={link.id} style={{ ...otherCssProps }}>
-            <li style={{ ...liElementStyles }}>{link.name}</li>
+            <li style={{ ...liElementStyles }} className={link.id}>
+              {link.name}
+            </li>
           </Link>
         )
       })}
