@@ -9,7 +9,7 @@ import {
   pWhoamiLinkStyle,
 } from '../../utils/stylesDefinitions'
 
-export const Home = () => {
+export const Home = React.memo(() => {
   return (
     <>
       <Introduction
@@ -22,4 +22,4 @@ export const Home = () => {
       ></Introduction>
     </>
   )
-}
+})

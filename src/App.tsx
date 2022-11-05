@@ -15,6 +15,7 @@ import {
 import { useSpring, animated, easings } from 'react-spring'
 import { CssStyleProps } from './Interfaces/Types'
 import { Blog } from './pages/Blogs/Blog'
+import { Vedios } from './pages/Vedios/Videos'
 
 export function App() {
   const useSpringFunction = (to: CssStyleProps, from: CssStyleProps) => {
@@ -68,7 +69,7 @@ export function App() {
           <NavLinks
             links={[
               { id: 'blog', to: '/blog', name: 'Blog' },
-              { id: 'projects', to: '/projects', name: 'Projects' },
+              // { id: 'projects', to: '/projects', name: 'Projects' }, // Add back when ready
               { id: 'talks', to: '/talks', name: 'Talks' },
             ]}
             ulElementStyles={navLinksCss}
@@ -97,6 +98,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/talks" element={<Vedios />} />
         </Routes>
       </Router>
     </>

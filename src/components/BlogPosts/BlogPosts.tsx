@@ -38,6 +38,7 @@ export const BlogPosts = ({
               style={{
                 ...blogPostDiv,
               }}
+              key={post.id}
             >
               <h1 style={{ ...h1Style }}>{post.title}</h1>
               <h3 style={{ ...otherProprs }}>{post.subTitle}</h3>

@@ -71,18 +71,13 @@ export const h1TitleSyle = {
 }
 export const ulElementStyle = {
   width: '60%',
-  padding: '5px',
-  backgroundColor: 'gold',
-  borderRadius: '3px',
   display: 'flex',
   flexDirection: 'column',
 }
 export const blogPostDiv = {
-  backgroundColor: 'var(--backGroundColourThree)',
   width: '85%',
-  margin: '10px',
-  padding: '10px',
+  margin: '5px',
+  padding: '5px',
   height: '25%',
   alignSelf: 'center',
-  borderRadius: '3px',
 }

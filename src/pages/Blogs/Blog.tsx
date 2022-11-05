@@ -9,7 +9,7 @@ import {
 import { BlogPosts } from '../../components/BlogPosts/BlogPosts'
 import { posts } from '../../utils/blogPost'
 
-export const Blog = () => {
+export const Blog = React.memo(() => {
   return (
     <>
       <BlogPosts
@@ -30,4 +30,4 @@ export const Blog = () => {
       />
     </>
   )
-}
+})
