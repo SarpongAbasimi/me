@@ -7,5 +7,9 @@ type NavProps = {
 }
 
 export const Nav = ({ children, styles }: NavProps) => {
-  return <nav style={{ ...styles }}>{children}</nav>
+  return (
+    <nav style={{ ...styles }}>
+      <>{children}</>
+    </nav>
+  )
 }

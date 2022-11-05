@@ -1,4 +1,5 @@
 export const navLinksCss = {
+  // backgroundColor: 'red',
   width: '50%',
   height: '40px',
   display: 'flex',
@@ -8,11 +9,13 @@ export const navLinksCss = {
 }
 
 export const navCss = {
+  // backgroundColor: 'gold',
   with: '100%',
   height: '40px',
   display: 'flex',
-  justifyContent: 'flex-end',
+  justifyContent: 'space-between',
   paddingRight: '20px',
+  paddingLeft: '20px',
 }
 
 export const liElementCss = {
@@ -60,4 +63,26 @@ export const introPSytle = {
 
 export const pWhoamiLinkStyle = {
   color: 'var(--textLink)',
+}
+
+export const h1TitleSyle = {
+  color: 'var(--textTitleColor)',
+  fontFamily: 'var(--mons)',
+}
+export const ulElementStyle = {
+  width: '60%',
+  padding: '5px',
+  backgroundColor: 'gold',
+  borderRadius: '3px',
+  display: 'flex',
+  flexDirection: 'column',
+}
+export const blogPostDiv = {
+  backgroundColor: 'var(--backGroundColourThree)',
+  width: '85%',
+  margin: '10px',
+  padding: '10px',
+  height: '25%',
+  alignSelf: 'center',
+  borderRadius: '3px',
 }

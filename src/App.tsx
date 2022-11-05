@@ -1,4 +1,4 @@
-import React, { MouseEvent, useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import { Home } from './pages/Home/Home'
 import { Nav } from './components/Nav/Nav'
@@ -14,6 +14,7 @@ import {
 } from './utils/stylesDefinitions'
 import { useSpring, animated, easings } from 'react-spring'
 import { CssStyleProps } from './Interfaces/Types'
+import { Blog } from './pages/Blogs/Blog'
 
 export function App() {
   const useSpringFunction = (to: CssStyleProps, from: CssStyleProps) => {
@@ -52,6 +53,19 @@ export function App() {
       <Router>
         <Nav styles={navCss}>
           <NavLinks
+            links={[{ id: 'main', to: '/', name: 'SΩΨ' }]}
+            ulElementStyles={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+            liElementStyles={{
+              ...liElementCss,
+              fontWeight: 'bold',
+              fontSize: '20px',
+            }}
+            otherCssProps={{ textDecoration: 'none' }}
+          ></NavLinks>
+          <NavLinks
             links={[
               { id: 'blog', to: '/blog', name: 'Blog' },
               { id: 'projects', to: '/projects', name: 'Projects' },
@@ -82,6 +96,7 @@ export function App() {
         </Nav>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
     </>
