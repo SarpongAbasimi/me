@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './App.css'
 import { Home } from './pages/Home/Home'
 import { Nav } from './components/Nav/Nav'
@@ -12,8 +12,29 @@ import {
   liElementCss,
   fontAwesonIconCss,
 } from './utils/stylesDefinitions'
+import { useSpring, animated, easings } from 'react-spring'
 
 export function App() {
+  const initialSpring = useSpring({
+    to: { color: 'gold' },
+    from: fontAwesonIconCss,
+    config: {
+      duration: 1000,
+      easing: easings.easeInCirc,
+    },
+  })
+
+  let spingAnimationWhenHover = useSpring({
+    to: { color: 'red' },
+    from: { ...fontAwesonIconCss, color: 'gold' },
+    config: {
+      duration: 1000,
+      easing: easings.easeInOutElastic,
+    },
+  })
+
+  let [sprintEffect, setSprintEffect] = useState(initialSpring)
+
   return (
     <>
       <Router>
@@ -30,12 +51,16 @@ export function App() {
           >
             {navSocials.map((value, _) => {
               return (
-                <a href={value.link} key={value.id}>
-                  <FontAwesomeIcon
-                    icon={value.fontAwesonIcon}
-                    style={{ ...fontAwesonIconCss }}
-                  />
-                </a>
+                <animated.a
+                  className={value.id}
+                  href={value.link}
+                  key={value.id}
+                  style={sprintEffect}
+                  onMouseOver={() => setSprintEffect(spingAnimationWhenHover)}
+                  onMouseLeave={() => setSprintEffect(initialSpring)}
+                >
+                  <FontAwesomeIcon icon={value.fontAwesonIcon} />
+                </animated.a>
               )
             })}
           </NavLinks>

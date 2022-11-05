@@ -17,7 +17,7 @@
   --textNormalColor: hsla(0, 0%, 100%, 0.88);
   --textTitleColor: wheat;
   --textLink: #ff0;
-  --initialTextColor: '#847f7f',
+  --initialTextColor: '#847f7f';
 
   /** For when the bg changes to*/
   --bgwhite: #fff;
@@ -35,5 +35,3 @@ body {
   background-color: var(--backGroundColourTwo);
   padding: 10px;
 }
-
-

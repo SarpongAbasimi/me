@@ -1,5 +1,4 @@
 export const navLinksCss = {
-  // backgroundColor: 'gold',
   width: '50%',
   height: '40px',
   display: 'flex',
@@ -9,33 +8,30 @@ export const navLinksCss = {
 }
 
 export const navCss = {
-  // backgroundColor: 'red',
   with: '100%',
-  height: '50px',
+  height: '40px',
   display: 'flex',
   justifyContent: 'flex-end',
+  paddingRight: '20px',
 }
 
 export const liElementCss = {
-  fontFamily: 'sans-serif',
+  fontFamily: 'var(--mons)',
   listStyleType: 'none',
   fontSize: '16px',
   textDecoration: 'none',
   color: '#bbb',
-  // backgroundColor: 'red',
-  marginLeft: '3px',
-  padding: '5px',
+  marginLeft: '2px',
+  padding: '2px',
   marginRight: '3px',
 }
 
 export const fontAwesonIconCss = {
   color: '#bbb',
-  marginLeft: '2px',
 }
 
 export const flexContainer = {
   width: '100%',
-  // backgroundColor: 'green',
   display: 'flex',
   paddingTop: '3%',
   justifyContent: 'center',
@@ -43,7 +39,6 @@ export const flexContainer = {
 
 export const childContainerStyle = {
   width: '50%',
-  // backgroundColor: 'blue',
   padding: '1%',
 }
 
