@@ -33,8 +33,8 @@ export const Introduction = ({
   pWhoamiLinkStyle,
 }: IntroductionProp) => {
   return (
-    <div style={{ ...flexContainer }}>
-      <div style={{ ...childContainerStyle }}>
+    <div style={{ ...flexContainer }} className="home_flex_container">
+      <div style={{ ...childContainerStyle }} className="home_child_container">
         <h1 className="name" style={{ ...h1NameStyle }}>
           {intro.name}
         </h1>

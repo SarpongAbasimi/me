@@ -41,7 +41,7 @@ export const flexContainer = {
 }
 
 export const childContainerStyle = {
-  width: '50%',
+  width: '800px',
   padding: '1%',
 }
 
@@ -75,7 +75,7 @@ export const ulElementStyle = {
   flexDirection: 'column',
 }
 export const blogPostDiv = {
-  width: '85%',
+  width: '350px',
   margin: '5px',
   padding: '5px',
   height: '25%',

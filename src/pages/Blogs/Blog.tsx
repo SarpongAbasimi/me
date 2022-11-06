@@ -24,7 +24,7 @@ export const Blog = React.memo(() => {
         anchorStyle={{ ...pWhoamiLinkStyle, fontFamily: 'var(--oSans)' }}
         otherProprs={{
           color: 'var(--textNormalColor)',
-          fontFamily: 'var(--oSans)',
+          fontFamily: 'var(--mons)',
           fontWeight: '500',
         }}
       />

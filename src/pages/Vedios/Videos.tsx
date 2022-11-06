@@ -23,7 +23,7 @@ export const Vedios = React.memo(() => {
       }}
       otherProps={{
         margin: '4px',
-        width: '50%',
+        width: '350px',
         alignSelf: 'center',
         padding: '10px',
       }}

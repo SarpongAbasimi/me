@@ -41,9 +41,9 @@ export const BlogPosts = ({
               key={post.id}
             >
               <h1 style={{ ...h1Style }}>{post.title}</h1>
-              <h3 style={{ ...otherProprs }}>{post.subTitle}</h3>
+              <h3 style={{ ...otherProprs }}>{post.subTitle} 📖</h3>
               <a href={post.link} style={{ ...anchorStyle }}>
-                Read
+                Read {post.title}
               </a>
             </div>
           )
