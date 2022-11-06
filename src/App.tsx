@@ -101,7 +101,7 @@ export function App() {
           <Route path="/talks" element={<Vedios />} />
         </Routes>
       </Router> */}
-      <h1 style={{ color: 'white' }}>Hello</h1>
+      <h1 style={{ color: 'red' }}>Hello</h1>
     </>
   )
 }
