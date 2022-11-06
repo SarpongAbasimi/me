@@ -54,7 +54,7 @@ export function App() {
       <Router>
         <Nav styles={navCss}>
           <NavLinks
-            links={[{ id: 'main', to: '/', name: 'SΩΨ' }]}
+            links={[{ id: 'main', to: '/me', name: 'SΩΨ' }]}
             ulElementStyles={{
               display: 'flex',
               alignItems: 'center',
