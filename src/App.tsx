@@ -54,7 +54,7 @@ export function App() {
       <Router>
         <Nav styles={navCss}>
           <NavLinks
-            links={[{ id: 'main', to: '/', name: 'SΩΨ' }]}
+            links={[{ id: 'main', to: '/me', name: 'SΩΨ' }]}
             ulElementStyles={{
               display: 'flex',
               alignItems: 'center',
@@ -88,7 +88,7 @@ export function App() {
                 >
                   <FontAwesomeIcon
                     icon={value.fontAwesonIcon}
-                    style={{ font: '5px' }}
+                    style={{ font: '5px', margin: '1px' }}
                   />
                 </animated.a>
               )
@@ -96,7 +96,7 @@ export function App() {
           </NavLinks>
         </Nav>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/me" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/talks" element={<Vedios />} />
         </Routes>

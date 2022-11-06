@@ -4,6 +4,7 @@ import {
   faTwitter,
   faYoutube,
   IconDefinition,
+  faMedium,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,6 +15,7 @@ export let socialsLinks: {
   twitter: string
   byMeCoffee: string
   currentCompnaySite?: string
+  medium: string
 } = {
   gitHub: 'https://github.com/SarpongAbasimi',
   linkedIn: 'https://uk.linkedin.com/in/sarpong-abasimi-353380163',
@@ -21,6 +23,7 @@ export let socialsLinks: {
   twitter: 'https://twitter.com/sarpongTech',
   byMeCoffee: 'https://www.buymeacoffee.com/theshow',
   currentCompnaySite: 'https://www.47deg.com/',
+  medium: 'https://medium.com/@1550707241489',
 }
 
 export const navSocials: {
@@ -52,5 +55,10 @@ export const navSocials: {
     id: 'linkedIn',
     fontAwesonIcon: faLinkedinIn,
     link: socialsLinks.linkedIn,
+  },
+  {
+    id: 'medium',
+    fontAwesonIcon: faMedium,
+    link: socialsLinks.medium,
   },
 ]
