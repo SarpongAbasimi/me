@@ -51,10 +51,10 @@ export function App() {
 
   return (
     <>
-      {/* <Router>
+      <Router>
         <Nav styles={navCss}>
           <NavLinks
-            links={[{ id: 'main', to: '/profilo', name: 'SΩΨ' }]}
+            links={[{ id: 'main', to: '/', name: 'SΩΨ' }]}
             ulElementStyles={{
               display: 'flex',
               alignItems: 'center',
@@ -96,12 +96,11 @@ export function App() {
           </NavLinks>
         </Nav>
         <Routes>
-          <Route path="/profilo" element={<Home />} />
+          <Route path="/me" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/talks" element={<Vedios />} />
         </Routes>
-      </Router> */}
-      <h1 style={{ color: 'red' }}>Hello</h1>
+      </Router>
     </>
   )
 }
