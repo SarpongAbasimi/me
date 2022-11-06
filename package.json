@@ -1,7 +1,7 @@
 {
   "name": "mysite",
   "version": "0.1.0",
-  "homepage": "https://SarpongAbasimi.github.io/profilo",
+  "homepage": "https://SarpongAbasimi.github.io/me",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",

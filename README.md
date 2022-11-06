@@ -2,6 +2,6 @@
 
 #### TechStack.
 
-- React.
-- Jest & Enzyme.
-- Git.
+- React
+- React Spring
+- Git

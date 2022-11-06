@@ -51,7 +51,7 @@ export function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router>
         <Nav styles={navCss}>
           <NavLinks
             links={[{ id: 'main', to: '/profilo', name: 'SΩΨ' }]}
@@ -100,7 +100,8 @@ export function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/talks" element={<Vedios />} />
         </Routes>
-      </Router>
+      </Router> */}
+      <h1 style={{ color: 'white' }}>Hello</h1>
     </>
   )
 }
