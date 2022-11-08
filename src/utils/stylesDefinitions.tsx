@@ -77,7 +77,6 @@ export const ulElementStyle = {
 export const blogPostDiv = {
   width: '350px',
   margin: '5px',
-  padding: '5px',
-  height: '25%',
+  padding: '10px',
   alignSelf: 'center',
 }

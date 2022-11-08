@@ -34,18 +34,13 @@ export const BlogPosts = ({
       >
         {blogPosts.map((post, _) => {
           return (
-            <div
-              style={{
-                ...blogPostDiv,
-              }}
-              key={post.id}
-            >
+            <li key={post.id} style={{ ...blogPostDiv }}>
               <h1 style={{ ...h1Style }}>{post.title}</h1>
               <h3 style={{ ...otherProprs }}>{post.subTitle} 📖</h3>
               <a href={post.link} style={{ ...anchorStyle }}>
                 Read {post.title}
               </a>
-            </div>
+            </li>
           )
         })}
       </ul>
