@@ -13,7 +13,7 @@ export const posts = [
   },
   {
     id: 'deployGh',
-    title: 'How To Deploy On Gihub',
+    title: 'How To Deploy On Github',
     subTitle: 'Depolying To Github Pages.',
     link: 'https://medium.com/@1550707241489/depolying-your-website-to-github-pages-eb33e8514e0b',
   },
