@@ -34,6 +34,7 @@ export const Introduction = ({
 }: IntroductionProp) => {
   return (
     <div style={{ ...flexContainer }} className="home_flex_container">
+      <h1 style={{ color: 'white' }}>Do you show up</h1>
       <div style={{ ...childContainerStyle }} className="home_child_container">
         <h1 className="name" style={{ ...h1NameStyle }}>
           {intro.name}
